@@ -1,3 +1,42 @@
-#container {
-  font-size: 40px;
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#background {
+  background: #e9e9e9;
+  left: -5%;
+  position: absolute;
+  top: -3%;
+  width: 150%;
+}
+
+#content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#header h1 {
+  display: inline;
+  font: 85px helvetica;
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 80px;
+  margin: -10px;
+  opacity: 0.7;
+  width: 80px;
 }
