@@ -12,25 +12,6 @@ body {
   width: 150%;
 }
 
-#content {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-#header {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid black;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-#header h1 {
-  display: inline;
-  font: 85px helvetica;
-}
-
 .circle {
   border: 1px solid black;
   border-radius: 50%;
