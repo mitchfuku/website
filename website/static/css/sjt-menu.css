@@ -1,8 +1,10 @@
 nav {
   background: url('/static/images/top-bg.jpg') repeat-x;
   height: 48px;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 #nav-content {

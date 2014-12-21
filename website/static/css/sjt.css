@@ -6,5 +6,24 @@ body {
 }
 
 #main-content {
-  margin: 16px;
+  top: 48px;
+  width: 100%;
+}
+
+#hero {
+  background: url('/static/images/mid-bg.jpg') repeat-x;
+  padding: 12px 0;
+}
+
+#hero #hero-image {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#after-hero {
+  background: url('/static/images/main-bg.jpg') repeat-x;
+  padding: 12px 16px;
+  height: 568px;
 }
