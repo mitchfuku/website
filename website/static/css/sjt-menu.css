@@ -57,10 +57,11 @@ nav {
 #menu-content {
   background-color: #61427B;
   color: #fff;
-  width: 80%;
   height: 100%;
   left: -80%;
+  position: fixed;
   top: 0;
+  width: 80%;
 }
 
 #menu {
@@ -75,7 +76,6 @@ nav {
 }
 
 /** Menu interactions **/
-#menu-content,
 #main-content {
   position: absolute;
 }
@@ -87,4 +87,8 @@ nav {
 #main-content.menu-open,
 nav.menu-open {
   left: 80%;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
