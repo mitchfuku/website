@@ -8,3 +8,9 @@ menuOpener.addEventListener('click', function() {
   mainContent.classList.toggle('menu-open');
   nav.classList.toggle('menu-open');
 });
+
+mainContent.addEventListener('click', function() {
+  menuContent.classList.remove('menu-open');
+  mainContent.classList.remove('menu-open');
+  nav.classList.remove('menu-open');
+});
