@@ -1,56 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
 }
 
-nav {
-  background: url('/static/images/top-bg.jpg') repeat-x;
-  height: 48px;
-  position: relative;
-  width: 100%;
-}
-
-#nav-content {
-  height: 100%;
-  text-align: center;
-}
-
-#nav-content::before {
-  content: '';
-  height: 100%;
-  vertical-align: middle;
-}
-
-#nav-content::before,
-#logo,
-#menu-opener {
-  display: inline-block;
-}
-
-#logo {
-  height: 30px;
-  margin-top: -4px;
-  vertical-align: middle;
-  width: 25px;
-}
-
-#menu-opener {
-  cursor: pointer;
-  height: 48px;
-  left: 0;
-  position: absolute;
-  width: 48px;
-}
-
-#hamburger-container {
-  padding-top: 15px;
-  padding-left: 10px;
-}
-
-#hamburger-container .hamburger {
-  display: block;
-  height: 2px;
-  width: 28px;
-  background-color: #fff;
-  margin-bottom: 6px;
+#main-content {
+  margin: 16px;
 }

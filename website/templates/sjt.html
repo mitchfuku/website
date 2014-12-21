@@ -5,10 +5,11 @@
   <html lang="en">
     <head>
       <link type="text/css" rel="stylesheet" href="/static/css/sjt.css" />
+      <link type="text/css" rel="stylesheet" href="/static/css/sjt-menu.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-      <nav>
+      <nav id="nav">
         <div id="nav-content">
           <div id="menu-opener">
             <div id="hamburger-container">
@@ -20,8 +21,26 @@
           <img src="/static/images/logo.gif" id="logo" />
         </div>
       </nav>
+      <div id="menu-content">
+        <ul id="menu">
+          <li class="main-menu-item">
+            Menu Item
+          </li>
+          <li class="main-menu-item">
+            Menu Item
+          </li>
+          <li class="main-menu-item">
+            Menu Item
+          </li>
+          <li class="main-menu-item">
+            Menu Item
+          </li>
+        </ul>
+      </div>
+      <div id="main-content">
+        Blah
+      </div>
     </body>
-    <script src="/static/js/jquery-1.10.2.min.js"></script>
     <script src="static/js/sjt.js"></script>
   </html>
 {% endspaceless %}

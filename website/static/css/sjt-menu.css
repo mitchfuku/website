@@ -1,0 +1,88 @@
+nav {
+  background: url('/static/images/top-bg.jpg') repeat-x;
+  height: 48px;
+  position: relative;
+  width: 100%;
+}
+
+#nav-content {
+  height: 100%;
+  text-align: center;
+}
+
+#nav-content::before {
+  content: '';
+  height: 100%;
+  vertical-align: middle;
+}
+
+#nav-content::before,
+#logo,
+#menu-opener {
+  display: inline-block;
+}
+
+#logo {
+  height: 30px;
+  margin-top: -4px;
+  vertical-align: middle;
+  width: 25px;
+}
+
+/** menu hamburger styling **/
+#menu-opener {
+  cursor: pointer;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  width: 48px;
+}
+
+#hamburger-container {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+#hamburger-container .hamburger {
+  display: block;
+  height: 2px;
+  width: 28px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+/** menu content styling **/
+#menu-content {
+  background-color: #61427B;
+  color: #fff;
+  width: 80%;
+  height: 100%;
+  left: -80%;
+  top: 0;
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu .main-menu-item {
+  padding: 14px 12px;
+  border-bottom: 1px solid #fff;
+}
+
+/** Menu interactions **/
+#menu-content,
+#main-content {
+  position: absolute;
+}
+
+#menu-content.menu-open {
+  left: 0;
+}
+
+#main-content.menu-open,
+nav.menu-open {
+  left: 80%;
+}
