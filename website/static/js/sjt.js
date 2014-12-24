@@ -1,18 +1,11 @@
 var menuOpener = document.getElementById("menu-opener");
 var menuContent = document.getElementById("menu-content");
 var mainContent  = document.getElementById("main-content");
-var nav  = document.getElementById("nav");
+var menuOpenClass = 'menu-open';
 
 menuOpener.addEventListener('click', function() {
-  menuContent.classList.toggle('menu-open');
-  mainContent.classList.toggle('menu-open');
-  nav.classList.toggle('menu-open');
-  document.body.classList.toggle('menu-open');
-});
-
-mainContent.addEventListener('click', function() {
-  menuContent.classList.remove('menu-open');
-  mainContent.classList.remove('menu-open');
-  nav.classList.remove('menu-open');
-  document.body.classList.remove('menu-open');
+  menuOpener.classList.toggle(menuOpenClass);
+  menuContent.classList.toggle(menuOpenClass);
+  mainContent.classList.toggle(menuOpenClass);
+  document.body.classList.toggle(menuOpenClass);
 });

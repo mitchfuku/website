@@ -32,12 +32,20 @@ nav {
 }
 
 /** menu hamburger styling **/
-#menu-opener {
+#menu-opener,
+#menu-opener .close-menu {
   cursor: pointer;
   height: 48px;
   left: 0;
+  line-height: 48px;
   position: absolute;
   width: 48px;
+}
+
+#menu-opener .close-menu {
+  display: none;
+  color: #fff;
+  font-size: 24px;
 }
 
 #hamburger-container {
@@ -53,15 +61,23 @@ nav {
   margin-bottom: 6px;
 }
 
+#menu-opener.menu-open #hamburger-container {
+  display: none;
+}
+
+#menu-opener.menu-open .close-menu {
+  display: block;
+}
+
 /** menu content styling **/
 #menu-content {
   background-color: #61427B;
   color: #fff;
   height: 100%;
-  left: -80%;
   position: fixed;
-  top: 0;
-  width: 80%;
+  top: 48px;
+  width: 100%;
+  display: none;
 }
 
 #menu {
@@ -81,12 +97,11 @@ nav {
 }
 
 #menu-content.menu-open {
-  left: 0;
+  display: block;
 }
 
-#main-content.menu-open,
-nav.menu-open {
-  left: 80%;
+#main-content.menu-open {
+  display: none;
 }
 
 body.menu-open {
