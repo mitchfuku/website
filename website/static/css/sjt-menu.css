@@ -80,6 +80,11 @@ nav {
   display: none;
 }
 
+#menu-content a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #menu {
   list-style-type: none;
   padding: 0;
@@ -87,6 +92,7 @@ nav {
 }
 
 #menu .main-menu-item {
+  display: block;
   padding: 14px 12px;
   border-bottom: 1px solid #fff;
 }

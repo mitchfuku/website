@@ -7,3 +7,7 @@ def home(request):
 # serve the /sjt directory
 def sjt(request):
   return render(request, 'sjt.html')
+
+# serve the /sjt/about directory
+def sjtAbout(request):
+  return render(request, 'sjt-about.html')
