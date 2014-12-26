@@ -1,0 +1,48 @@
+{% spaceless %}
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html lang="en">
+    <head>
+      <link type="text/css" rel="stylesheet" href="/static/css/sjt.css" />
+      <link type="text/css" rel="stylesheet" href="/static/css/sjt-menu.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+      <nav id="nav">
+        <div id="nav-content">
+          <div id="menu-opener">
+            <div class="close-menu">X</div>
+            <div id="hamburger-container">
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+            </div>
+          </div>
+          <img src="/static/images/logo.gif" id="logo" />
+        </div>
+      </nav>
+      <div id="menu-content">
+        <ul id="menu">
+          <li class="main-menu-item">
+            Home
+          </li>
+          <li class="main-menu-item">
+            About SJT
+          </li>
+          <li class="main-menu-item">
+            Calendar
+          </li>
+          <li class="main-menu-item">
+            Performances
+          </li>
+        </ul>
+      </div>
+      <div id="main-content">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </body>
+    <script src="/static/js/sjt.js"></script>
+  </html>
+{% endspaceless %}
