@@ -1,9 +1,38 @@
 {% extends "sjt-base.html" %}
+{% block css %}
+  <link type="text/css" rel="stylesheet" href="/static/css/sjt-home.css" />
+{% endblock css %}
 {% block content %}
   <div id="hero">
     <img src="/static/images/1.jpg" id="hero-image" />
   </div>
   <div id="after-hero">
-    Blah
+    <div class="card margin-top-8">
+      <h1>Upcoming Taiko Events</h1>
+      <ul class="events">
+        <li class="event">
+          <span class="upcoming-dates">
+            Jan 4 - Feb 22, 2015
+          </span>
+          <span class="upcoming-details">
+            Lorem ipsum dolor sit amet, consectetu
+          </span>
+          <span class="upcoming-other">
+            Donec viverra consequat ex. Cras risus metus, lobortis vitae orci eu, dapibus vestibulum quam. In tincidunt vel tortor in placerat. Integer vitae semper eros, quis lobortis lacus. Phasellus dui quam, porta id ligula sed, maximus euismod diam. Nullam ullamcorper semper mi eget porta
+          </span>
+        </li>
+        <li class="event">
+          <span class="upcoming-dates">
+            Jan 4 - Feb 22, 2015
+          </span>
+          <span class="upcoming-details">
+            Suspendisse sit amet cursus libero
+          </span>
+          <span class="upcoming-other">
+            Donec viverra consequat ex. Cras risus metus, lobortis vitae orci eu, dapibus vestibulum quam. In tincidunt vel tortor in placerat. Integer vitae semper eros, quis lobortis lacus. Phasellus dui quam, porta id ligula sed, maximus euismod diam. Nullam ullamcorper semper mi eget porta
+          </span>
+        </li>
+      </ul>
+    </div>
   </div>
 {% endblock content %}

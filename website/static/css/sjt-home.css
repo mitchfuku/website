@@ -1,0 +1,32 @@
+.upcoming-dates,
+.upcoming-details,
+.upcoming-other {
+  display: block;
+}
+
+.upcoming-dates {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.upcoming-details {
+  color: #f37121;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.upcoming-other {
+  font-size: 14px;
+}
+
+.event {
+  margin-top: 8px;
+}
+
+.event:first-child {
+  margin-top: 0;
+}
+
+.events {
+  margin-top: 4px;
+}
