@@ -11,3 +11,7 @@ def sjt(request):
 # serve the /sjt/about directory
 def sjtAbout(request):
   return render(request, 'sjt-about.html')
+
+# serve the /sw directory
+def sw(request):
+  return render(request, 'sw.html')

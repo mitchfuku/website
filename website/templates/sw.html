@@ -1,0 +1,26 @@
+{% spaceless %}
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html lang="en">
+    <head>
+      <script src="https://fb.me/react-with-addons-0.14.5.min.js"></script>
+      <script src="https://fb.me/react-dom-0.14.5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+    </head>
+    <body>
+      <div id="root"></div>
+    </body>
+    <script>
+      var StarWarsImperialAssault;
+    </script>
+    <script type="text/babel" src="/static/js/sw/StarWarsImperialAssault.react.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <StarWarsImperialAssault />,
+        document.getElementById('root')
+      );
+    </script>
+  </html>
+{% endspaceless %}
