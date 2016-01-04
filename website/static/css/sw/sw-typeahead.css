@@ -1,14 +1,18 @@
 .typeahead-typeahead {
   font-size: 12px;
   padding: 8px;
+  min-width: 200px;
 }
 
 .typeahead-resultList {
   display: inline-block;
   list-style-type: none;
+  position: absolute;
   padding: 0;
-  border: 1px solid #efefef;
+  border: 1px solid #ededed;
   margin: 4px 0 0;
+  z-index: 1000;
+  background: #ffffff;
 }
 
 .typeahead-result {

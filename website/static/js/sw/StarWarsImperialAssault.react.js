@@ -102,7 +102,7 @@ StarWarsImperialAssault = React.createClass({
 
   _toFormattedMarkup(arr) {
     if (!arr.length) {
-      return "";
+      return "none";
     }
 
     return arr.map(
@@ -145,20 +145,9 @@ StarWarsImperialAssault = React.createClass({
       newTiles = this.state.currentTiles;
     }
 
-    var tilesToKeepMarkup = 
-      tilesToKeep.length ?
-      <div>Tiles to Keep: {this._toFormattedMarkup(tilesToKeep)}</div> :
-      null;
-    var newTilesMarkup = 
-      newTiles.length ?
-      <div>New Tiles: {this._toFormattedMarkup(newTiles)}</div>:
-      null;
-    var tilesToRemoveMarkup = 
-      tilesToRemove.length ?
-      <div>Tiles to Remove: {this._toFormattedMarkup(tilesToRemove)}</div>:
-      null;
     return(
       <div>
+        <img src="/static/images/sw/swia-logo.png" className="base-logo" />
         <div className="base-currentTypeahead">
           Current Mission:
           <SWTypeahead 
@@ -178,15 +167,41 @@ StarWarsImperialAssault = React.createClass({
           />
         </div>
         <div className="clearfix" />
-        {tilesToKeepMarkup}
-        {newTilesMarkup}
-        {tilesToRemoveMarkup}
         <div>
-          <a 
-            href="http://files.geekdo.com/geekfile_download.php?filetype=application%2Fpdf&filename=Campaign+Tile+Guide+v3.0.pdf&filecode=svuew6rswl&validationcode=faabcfbe0379a0498d3249e4a2ff7cc9"
-            target="_blank">
-            See Campaign Tile Guide
-          </a>
+          <div className="base-tiles">
+            <div className="base-tileList">
+              <strong>Tiles to Keep: </strong>{this._toFormattedMarkup(tilesToKeep)}
+            </div>
+            <div className="base-tileList">
+              <strong>New Tiles: </strong>{this._toFormattedMarkup(newTiles)}
+            </div>
+            <div className="base-tileList">
+              <strong>Tiles to Remove: </strong>{this._toFormattedMarkup(tilesToRemove)}
+            </div>
+          </div>
+        </div>
+        <div className="base-guides">
+          <div className="base-guideTitle">
+            Game Guides
+          </div>
+          <div className="base-guideRow">
+            Special thanks to Kush Gulati of BoardGameGeek: 
+            <br />
+            <a 
+              href="https://boardgamegeek.com/filepage/117642/campaign-tile-guide"
+              target="_blank">
+              See Campaign Tile Guide
+            </a>
+          </div>
+          <div className="base-guideRow">
+            Special thanks to Timothy Gallagher of BoardGameGeek: 
+            <br />
+            <a
+              href="https://boardgamegeek.com/filepage/111657/imperial-assault-core-set-terrain-tile-finder"
+              target="_blank">
+              See Tile Finder
+            </a>
+          </div>
         </div>
       </div>
     );
