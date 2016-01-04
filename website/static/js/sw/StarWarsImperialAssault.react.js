@@ -181,6 +181,13 @@ StarWarsImperialAssault = React.createClass({
         {tilesToKeepMarkup}
         {newTilesMarkup}
         {tilesToRemoveMarkup}
+        <div>
+          <a 
+            href="http://files.geekdo.com/geekfile_download.php?filetype=application%2Fpdf&filename=Campaign+Tile+Guide+v3.0.pdf&filecode=svuew6rswl&validationcode=faabcfbe0379a0498d3249e4a2ff7cc9"
+            target="_blank">
+            See Campaign Tile Guide
+          </a>
+        </div>
       </div>
     );
   }
