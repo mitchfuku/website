@@ -1,0 +1,21 @@
+.typeahead-typeahead {
+  font-size: 12px;
+  padding: 8px;
+}
+
+.typeahead-resultList {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #efefef;
+  margin: 4px 0 0;
+}
+
+.typeahead-result {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.typeahead-result:hover {
+  background-color: #efefef;
+}

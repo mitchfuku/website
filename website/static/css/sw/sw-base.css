@@ -1,0 +1,24 @@
+.base-currentTypeahead {
+  float: left;
+}
+
+.base-nextTypeahead {
+  float: right;
+}
+
+.base-oddTile,
+.base-evenTile {
+  margin-right: 4px;
+}
+
+.base-oddTile {
+  color: #78C5E8;
+}
+
+.base-evenTile {
+  color: #F93B6F;
+}
+
+.clearfix {
+  clear: both;
+}
