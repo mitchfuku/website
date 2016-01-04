@@ -30,18 +30,17 @@ var  SWTypeahead = React.createClass({
       this.setState({possibleData: []});
       return;
     }
-    var data = this.props.data.map(data => data[this.props.searchKey]);
-    var possibleData = data.filter(
-      str => str.toLowerCase().includes(e.target.value.toLowerCase())
+    var possibleData = this.props.data.filter(
+      data => data[this.props.searchKey].toLowerCase().includes(e.target.value.toLowerCase())
     );
     
     this.setState({possibleData});
   },
 
-  _onResultClick: function(name, idx) {
+  _onResultClick: function(data) {
     this.setState({possibleData: []});
-    this.refs.typeahead.value = name;
-    this.props.onSelect(this.props.data[idx]);
+    this.refs.typeahead.value = data[this.props.searchKey];
+    this.props.onSelect(data);
   },
 
   render: function() {
@@ -51,11 +50,11 @@ var  SWTypeahead = React.createClass({
         <div>
           <ul className="typeahead-resultList">
             {this.state.possibleData.map(
-              (name, idx) => 
+              (data, idx) => 
                 <li 
                   className="typeahead-result"
-                  onClick={() => this._onResultClick(name, idx)}>
-                  {name}
+                  onClick={() => this._onResultClick(data)}>
+                  {data[this.props.searchKey]}
                 </li>
             )}
           </ul>
