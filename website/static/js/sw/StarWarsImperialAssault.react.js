@@ -148,25 +148,26 @@ StarWarsImperialAssault = React.createClass({
     return(
       <div>
         <img src="/static/images/sw/swia-logo.png" className="base-logo" />
-        <div className="base-currentTypeahead">
-          Current Mission:
-          <SWTypeahead 
-            data={SWData}
-            inputName="current_mission" 
-            onSelect={this._onCurrentSelect}
-            searchKey="name"
-          />
+        <div className="base-margin-bottom-12">
+          <div className="base-margin-bottom-8">
+            Current Mission:
+            <SWTypeahead 
+              data={SWData}
+              inputName="current_mission" 
+              onSelect={this._onCurrentSelect}
+              searchKey="name"
+            />
+          </div>
+          <div>
+            Next Mission:
+            <SWTypeahead 
+              data={SWData}
+              inputName="next_mission" 
+              onSelect={this._onNextSelect}
+              searchKey="name"
+            />
+          </div>
         </div>
-        <div className="base-nextTypeahead">
-          Next Mission:
-          <SWTypeahead 
-            data={SWData}
-            inputName="next_mission" 
-            onSelect={this._onNextSelect}
-            searchKey="name"
-          />
-        </div>
-        <div className="clearfix" />
         <div>
           <div className="base-tiles">
             <div className="base-tileList">
@@ -180,6 +181,7 @@ StarWarsImperialAssault = React.createClass({
             </div>
           </div>
         </div>
+        <div className="clearfix" />
         <div className="base-guides">
           <div className="base-guideTitle">
             Game Guides

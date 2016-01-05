@@ -10,15 +10,16 @@ body {
   padding-bottom: 20px;
 }
 
-.base-currentTypeahead {
-  float: left;
+.base-margin-bottom-8 {
+  margin-bottom: 8px;
 }
 
-.base-nextTypeahead {
-  float: right;
+.base-margin-bottom-12 {
+  margin-bottom: 12px;
 }
 
 .base-tileList {
+  word-break: break-word;
 }
 
 .base-oddTile,
@@ -36,10 +37,13 @@ body {
 
 .base-tiles,
 .base-guides {
-  margin-top: 12px;
   display: inline-block;
   border: 1px solid #ededed;
   padding: 8px;
+}
+
+.base-guides {
+  margin-top: 12px;
 }
 
 .base-guideRow {
