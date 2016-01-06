@@ -132,14 +132,19 @@ StarWarsImperialAssault = React.createClass({
     var newTiles = []; 
     var tilesToRemove = [];
     if (this.state.nextTiles.length) {
-      tilesToKeep = this.state.currentTiles.filter(
-        tile => this.state.nextTiles.indexOf(tile) !== -1
-      );
-      newTiles = this.state.nextTiles.filter(
-        tile => this.state.currentTiles.indexOf(tile) === -1
-      );
-      tilesToRemove = this.state.currentTiles.filter(
-        tile => this.state.nextTiles.indexOf(tile) === -1
+      newTiles = this.state.nextTiles.slice();
+
+      this.state.currentTiles.map(
+        (tile, idx) => {
+          var index = newTiles.indexOf(tile);
+          if (index === -1) {
+            tilesToRemove.push(tile);
+            return;
+          }
+
+          tilesToKeep.push(tile);
+          newTiles.splice(index, 1);
+        }
       );
     } else {
       newTiles = this.state.currentTiles;
